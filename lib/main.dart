@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-import 'core/constants/app_dimens.dart';
 import 'core/constants/app_strings.dart';
-import 'core/theme/app_colors.dart';
 import 'core/theme/app_theme.dart';
 import 'core/utils/exception_logger.dart';
 import 'features/weather/presentation/bloc/weather_bloc.dart';
@@ -25,7 +23,6 @@ Future<void> main() async {
     );
     throw Exception(AppStrings.envConfigError);
   }
-
   initDependencies();
   runApp(const WeatherApp());
 }
