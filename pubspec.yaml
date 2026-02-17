@@ -1,0 +1,30 @@
+name: coopah_weather_task
+description: "A weather app built with clean architecture and BLoC pattern."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ^3.10.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  dio: ^5.8.0
+  equatable: ^2.0.7
+  flutter_dotenv: ^5.2.1
+  flutter_bloc: ^9.1.0
+  logger: ^2.5.0
+  get_it: ^8.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  mocktail: ^1.0.4
+  bloc_test: ^10.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - .env
