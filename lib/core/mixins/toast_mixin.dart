@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../constants/app_dimens.dart';
+import '../constants/app_dimensions.dart';
 import '../theme/app_colors.dart';
 
 /// The type of toast message to display.
@@ -35,7 +35,7 @@ mixin ToastMixin {
           behavior: SnackBarBehavior.floating,
           backgroundColor: _colorForType(type),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(AppDimens.radiusSm),
+            borderRadius: BorderRadius.circular(AppDimensions.radiusSm),
           ),
           duration: duration,
           content: Row(
@@ -43,9 +43,9 @@ mixin ToastMixin {
               Icon(
                 _iconForType(type),
                 color: AppColors.onToast,
-                size: AppDimens.iconSizeSm,
+                size: AppDimensions.iconSizeSm,
               ),
-              const SizedBox(width: AppDimens.spacingMd),
+              const SizedBox(width: AppDimensions.spacingMd),
               Expanded(
                 child: Text(
                   message,

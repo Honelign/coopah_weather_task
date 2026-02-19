@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/constants/app_dimens.dart';
+import '../../../../core/constants/app_dimensions.dart';
 
 /// Displays a labelled weather field (e.g. Temperature, Location).
 ///
@@ -23,14 +23,14 @@ class WeatherInfoSection extends StatelessWidget {
         Text(
           label,
           style: const TextStyle(
-            fontSize: AppDimens.fontSizeLg,
+            fontSize: AppDimensions.fontSizeLg,
             fontWeight: FontWeight.w500,
           ),
         ),
         Text(
           value,
           style: const TextStyle(
-            fontSize: AppDimens.fontSizeMd,
+            fontSize: AppDimensions.fontSizeMd,
             fontWeight: FontWeight.w400,
           ),
         ),

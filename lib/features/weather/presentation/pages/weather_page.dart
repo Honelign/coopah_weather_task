@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../core/constants/app_dimens.dart';
+import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/constants/app_strings.dart';
 import '../../../../core/mixins/toast_mixin.dart';
 import '../../domain/entities/weather_entity.dart';
@@ -64,35 +64,35 @@ class WeatherPage extends StatelessWidget with ToastMixin {
         Expanded(
           child: SingleChildScrollView(
             padding: const EdgeInsets.symmetric(
-              horizontal: AppDimens.spacingXl,
+              horizontal: AppDimensions.spacingXl,
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const SizedBox(height: AppDimens.spacingXl),
+                const SizedBox(height: AppDimensions.spacingXl),
                 const WeatherImage(),
-                const SizedBox(height: AppDimens.spacingXl),
+                const SizedBox(height: AppDimensions.spacingXl),
                 const Center(
                   child: Text(
                     AppStrings.appTitle,
                     style: TextStyle(
-                      fontSize: AppDimens.fontSizeXl,
+                      fontSize: AppDimensions.fontSizeXl,
                       fontWeight: FontWeight.w900,
                       fontStyle: FontStyle.italic,
                     ),
                   ),
                 ),
-                const SizedBox(height: AppDimens.spacingXl),
+                const SizedBox(height: AppDimensions.spacingXl),
                 WeatherInfoSection(
                   label: AppStrings.temperatureLabel,
                   value: weather.displayTemperature(isCelsius: isCelsius),
                 ),
-                const SizedBox(height: AppDimens.spacingXs),
+                const SizedBox(height: AppDimensions.spacingXs),
                 WeatherInfoSection(
                   label: AppStrings.locationLabel,
                   value: weather.locationName,
                 ),
-                const SizedBox(height: AppDimens.spacingLg),
+                const SizedBox(height: AppDimensions.spacingLg),
                 TemperatureToggle(isCelsius: isCelsius),
               ],
             ),

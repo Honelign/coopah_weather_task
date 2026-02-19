@@ -2,8 +2,8 @@
 ///
 /// Covers spacing, font sizes, border radii, icon sizes, and image dimensions.
 /// To change a dimension app-wide, update it here.
-class AppDimens {
-  AppDimens._();
+class AppDimensions {
+  AppDimensions._();
 
   // -- Spacing --
   static const double spacingXs = 5.0;
@@ -38,6 +38,7 @@ class AppDimens {
   // -- Aspect ratios --
   /// 4:3 ratio for compact layouts.
   static const double aspectRatioCompact = 4.0 / 3.0;
+
   /// 16:9 ratio for wide layouts.
   static const double aspectRatioWide = 16.0 / 9.0;
 }
